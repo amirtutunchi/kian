@@ -38,6 +38,7 @@ class HomeController: UIViewController , Storyboarded {
         super.viewDidLoad()
         setupUI()
         fetchData()
+        overrideUserInterfaceStyle = .light
     }
     func setupUI(){
         contactsTableView.delegate = self

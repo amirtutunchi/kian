@@ -38,11 +38,15 @@ extension HomeController : UITableViewDelegate , UITableViewDataSource{
             if let cell = cell as? QuickAddsTableViewCell{
                 if cell.model?.id == quickAddArray.first?.id{
                     cell.centerView.roundCorners(corners: [.topLeft , .topRight], radius: cornerRadius)
+                }else{
+                    cell.centerView.layer.mask = nil
                 }
             }
             if let cell = cell as? ContactsTableViewCell{
                 if cell.model?.id == restOfConatactsArray.first?.id{
                     cell.centerView.roundCorners(corners: [.topLeft , .topRight], radius: cornerRadius)
+                }else{
+                    cell.centerView.layer.mask = nil
                 }
             }
         }else{
@@ -52,12 +56,23 @@ extension HomeController : UITableViewDelegate , UITableViewDataSource{
                         cell.centerView.roundCorners(corners: [.bottomLeft , .bottomRight ], radius: cornerRadius)
                         cell.clearSeperator()
                     }
+                }else{
+                    if let cell = cell as? QuickAddsTableViewCell{
+                        cell.centerView.layer.mask = nil
+                        cell.drawSeperator()
+                    }
                 }
             }else{
                 if indexPath.row == restOfConatactsArray.count - 1{
                     if let cell = cell as? ContactsTableViewCell{
+                        print("vvvvvvvvvvvvvvvvv")
                         cell.centerView.roundCorners(corners: [.bottomLeft , .bottomRight ], radius: cornerRadius)
                         cell.clearSeperator()
+                    }
+                }else{
+                    if let cell = cell as? ContactsTableViewCell{
+                        cell.centerView.layer.mask = nil
+                        cell.drawSeperator()
                     }
                 }
 

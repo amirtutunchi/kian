@@ -49,11 +49,9 @@ class ContactsTableViewCell: UITableViewCell {
 
     override func prepareForReuse() {
         super.prepareForReuse()
-        // for removing mask we add for rounded section and shadow
-        DispatchQueue.main.async {
-            self.layer.mask = nil
-        }
+//        self.layer.mask = nil
         avatarImageView.image = nil
+//        self.layoutIfNeeded()
     }
     func drawSeperator(){
         let view = UIView.init(frame: CGRect.init(x: 0, y: centerView.bounds.height - 1 , width: centerView.bounds.width, height: 1))
