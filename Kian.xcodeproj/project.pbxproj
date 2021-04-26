@@ -13,6 +13,8 @@
 		01CCFEBD26367615006B19CD /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CCFEBC26367615006B19CD /* ContactsTableViewCell.swift */; };
 		01CCFEC526367B1C006B19CD /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CCFEC426367B1C006B19CD /* ImageDownloader.swift */; };
 		01CCFECA26368E3B006B19CD /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CCFEC926368E3B006B19CD /* UIImageView.swift */; };
+		01CCFED22636964F006B19CD /* ContactsHeaderTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CCFED12636964F006B19CD /* ContactsHeaderTableView.xib */; };
+		01CCFED72636968F006B19CD /* ContactHeaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CCFED62636968F006B19CD /* ContactHeaderTableView.swift */; };
 		01E62F2D2635ED5500BDA7CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E62F2C2635ED5500BDA7CD /* AppDelegate.swift */; };
 		01E62F362635ED5700BDA7CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E62F352635ED5700BDA7CD /* Assets.xcassets */; };
 		01E62F392635ED5700BDA7CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E62F372635ED5700BDA7CD /* LaunchScreen.storyboard */; };
@@ -67,6 +69,8 @@
 		01CCFEBC26367615006B19CD /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
 		01CCFEC426367B1C006B19CD /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		01CCFEC926368E3B006B19CD /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		01CCFED12636964F006B19CD /* ContactsHeaderTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsHeaderTableView.xib; sourceTree = "<group>"; };
+		01CCFED62636968F006B19CD /* ContactHeaderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactHeaderTableView.swift; sourceTree = "<group>"; };
 		01E62F292635ED5500BDA7CD /* Kian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E62F2C2635ED5500BDA7CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01E62F352635ED5700BDA7CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -232,6 +236,8 @@
 				01CCFEB226367038006B19CD /* HomeController+UITableViewDelegate.swift */,
 				01CCFEB7263670B1006B19CD /* QuickAddsTableViewCell.swift */,
 				01CCFEBC26367615006B19CD /* ContactsTableViewCell.swift */,
+				01CCFED12636964F006B19CD /* ContactsHeaderTableView.xib */,
+				01CCFED62636968F006B19CD /* ContactHeaderTableView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 				01E62FB42635EEF900BDA7CD /* Home.storyboard in Resources */,
 				01E62F392635ED5700BDA7CD /* LaunchScreen.storyboard in Resources */,
 				01E62F362635ED5700BDA7CD /* Assets.xcassets in Resources */,
+				01CCFED22636964F006B19CD /* ContactsHeaderTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01E62FB92635EF1200BDA7CD /* HomeController.swift in Sources */,
+				01CCFED72636968F006B19CD /* ContactHeaderTableView.swift in Sources */,
 				01E62F922635EE3400BDA7CD /* UIControllerExtension.swift in Sources */,
 				01CCFEBD26367615006B19CD /* ContactsTableViewCell.swift in Sources */,
 				01E62F652635EE2D00BDA7CD /* MainCoordinator.swift in Sources */,

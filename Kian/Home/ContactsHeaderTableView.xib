@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactHeaderTableView" customModule="Kian" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="Eje-Nk-RPC" id="Lph-sx-fMk"/>
+                <outlet property="nameLbl" destination="KKP-HC-uJh" id="b32-ZT-l00"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Eje-Nk-RPC">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKP-HC-uJh">
+                    <rect key="frame" x="169" y="4" width="37" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.3034449816" green="0.28417354820000001" blue="0.40001374480000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3n-tk-PHG">
+                    <rect key="frame" x="214" y="15" width="145" height="2"/>
+                    <color key="backgroundColor" red="0.83921568627450982" green="0.8666666666666667" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="oYo-CC-s0v"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ng1-Lc-9W2">
+                    <rect key="frame" x="16" y="15" width="145" height="2"/>
+                    <color key="backgroundColor" red="0.83921568627450982" green="0.8666666666666667" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="0uq-l2-k9i"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="PV4-sX-0fC"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KKP-HC-uJh" firstAttribute="leading" secondItem="Ng1-Lc-9W2" secondAttribute="trailing" constant="8" id="0qi-sZ-i97"/>
+                <constraint firstItem="d3n-tk-PHG" firstAttribute="centerY" secondItem="Eje-Nk-RPC" secondAttribute="centerY" id="9yg-uQ-6Ti"/>
+                <constraint firstAttribute="trailing" secondItem="d3n-tk-PHG" secondAttribute="trailing" constant="16" id="P0t-tS-olV"/>
+                <constraint firstItem="Ng1-Lc-9W2" firstAttribute="centerY" secondItem="Eje-Nk-RPC" secondAttribute="centerY" id="f5J-Ol-awf"/>
+                <constraint firstItem="KKP-HC-uJh" firstAttribute="centerX" secondItem="Eje-Nk-RPC" secondAttribute="centerX" id="gjI-QP-JXT"/>
+                <constraint firstItem="KKP-HC-uJh" firstAttribute="centerY" secondItem="Eje-Nk-RPC" secondAttribute="centerY" id="hkZ-m4-5Le"/>
+                <constraint firstItem="Ng1-Lc-9W2" firstAttribute="leading" secondItem="Eje-Nk-RPC" secondAttribute="leading" constant="16" id="kcv-rI-dyb"/>
+                <constraint firstItem="d3n-tk-PHG" firstAttribute="leading" secondItem="KKP-HC-uJh" secondAttribute="trailing" constant="8" id="ppx-8c-yGc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="52" y="-120.53973013493254"/>
+        </view>
+    </objects>
+</document>

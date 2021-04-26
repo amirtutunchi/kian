@@ -15,8 +15,8 @@ protocol Storyboarded {
 extension Storyboarded where Self : UIViewController{
     static func instantiate() -> Self{
         let id = String(describing: self)
+        /// next line of code is kind of standard that i have ... every controller in the naming should end with word controller i know it sounds wired :D
         let storyboard = UIStoryboard(name: String(id.dropLast(10)), bundle: Bundle.main)
-        print(id , "id " , storyboard , " storyboard")
         return storyboard.instantiateViewController(withIdentifier: String(id.dropLast(10)) ) as! Self
     }
 }

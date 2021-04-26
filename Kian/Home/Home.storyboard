@@ -61,21 +61,22 @@
                                                                         <constraint firstAttribute="height" constant="40" id="jhj-Qv-Cnv"/>
                                                                         <constraint firstAttribute="width" constant="78" id="pvr-aZ-B73"/>
                                                                     </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                     <state key="normal" title="Invite" image="plus">
                                                                         <color key="titleColor" red="0.74947935340000005" green="0.76836770769999996" blue="0.7843171954" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     </state>
                                                                 </button>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9JH-g8-Qa2">
-                                                                    <rect key="frame" x="64" y="12" width="41.5" height="41"/>
+                                                                    <rect key="frame" x="64" y="12" width="44.5" height="41"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShU-jd-VFR">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="44.5" height="20.5"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                             <color key="textColor" red="0.30696466569999997" green="0.28450173140000001" blue="0.41038012499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfX-V1-OgK">
-                                                                            <rect key="frame" x="0.0" y="20.5" width="41.5" height="20.5"/>
+                                                                            <rect key="frame" x="0.0" y="20.5" width="44.5" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <color key="textColor" red="0.75340086220000002" green="0.77228921650000004" blue="0.78823876380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                             <nil key="highlightedColor"/>
@@ -131,8 +132,8 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pf-ef-QSf">
-                                                                    <rect key="frame" x="64" y="22.5" width="41.5" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <rect key="frame" x="64" y="22.5" width="44.5" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                     <color key="textColor" red="0.30696466569999997" green="0.28450173140000001" blue="0.41038012499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -143,6 +144,7 @@
                                                                         <constraint firstAttribute="height" constant="40" id="BjG-bX-ido"/>
                                                                         <constraint firstAttribute="width" constant="70" id="CZj-ag-raL"/>
                                                                     </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                     <state key="normal" title="Add" image="plus"/>
                                                                 </button>
                                                             </subviews>
@@ -188,7 +190,6 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="H4u-Xo-oBV" firstAttribute="centerY" secondItem="jwv-eI-YnR" secondAttribute="centerY" id="25h-eg-cIf"/>
-                                    <constraint firstAttribute="bottom" secondItem="j5e-TW-UEC" secondAttribute="bottom" id="GDB-6g-nAm"/>
                                     <constraint firstItem="j5e-TW-UEC" firstAttribute="top" secondItem="H4u-Xo-oBV" secondAttribute="bottom" constant="24" id="LYF-38-l4T"/>
                                     <constraint firstItem="jwv-eI-YnR" firstAttribute="leading" secondItem="M58-ei-7e1" secondAttribute="leading" constant="12" id="gfd-Nx-Uc3"/>
                                     <constraint firstItem="j5e-TW-UEC" firstAttribute="leading" secondItem="M58-ei-7e1" secondAttribute="leading" id="je5-Eg-dbw"/>
@@ -196,6 +197,7 @@
                                     <constraint firstItem="jwv-eI-YnR" firstAttribute="top" secondItem="M58-ei-7e1" secondAttribute="top" constant="12" id="qsC-7p-da4"/>
                                     <constraint firstItem="hzT-Ke-afD" firstAttribute="top" secondItem="M58-ei-7e1" secondAttribute="top" constant="12" id="ucR-mz-oi1"/>
                                     <constraint firstAttribute="trailing" secondItem="hzT-Ke-afD" secondAttribute="trailing" constant="12" id="vA8-Ff-Sur"/>
+                                    <constraint firstAttribute="bottom" secondItem="j5e-TW-UEC" secondAttribute="bottom" id="wfy-gL-FFX"/>
                                     <constraint firstItem="H4u-Xo-oBV" firstAttribute="centerX" secondItem="M58-ei-7e1" secondAttribute="centerX" id="x4T-ej-v0p"/>
                                 </constraints>
                             </view>
@@ -210,6 +212,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="centerView" destination="M58-ei-7e1" id="4GQ-Oe-PRk"/>
                         <outlet property="contactsTableView" destination="j5e-TW-UEC" id="wRh-Yu-2y2"/>
                     </connections>
                 </viewController>

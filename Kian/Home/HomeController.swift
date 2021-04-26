@@ -32,6 +32,7 @@ class HomeController: UIViewController , Storyboarded {
         }
     }
     @IBOutlet weak var contactsTableView: UITableView!
+    @IBOutlet weak var centerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,9 @@ class HomeController: UIViewController , Storyboarded {
     func setupUI(){
         contactsTableView.delegate = self
         contactsTableView.dataSource = self
+        contactsTableView.tableFooterView = UIView.init()
+        centerView.layer.cornerRadius = 12
+        centerView.clipsToBounds = true
     }
     func fetchData(){
         self.startLoading()

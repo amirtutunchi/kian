@@ -9,7 +9,7 @@ import UIKit
 
 class ContactsTableViewCell: UITableViewCell {
     static let nib = "ContactsTableViewCell"
-    
+    var seperatorView : UIView?
     @IBOutlet weak var mobileLbl: UILabel!
     @IBOutlet weak var addBtn: UIButton!
     @IBOutlet weak var nameLbl: UILabel!
@@ -42,12 +42,28 @@ class ContactsTableViewCell: UITableViewCell {
         
         addBtn.layer.borderWidth = 1
         addBtn.layer.borderColor = #colorLiteral(red: 0.7450664043, green: 0.7692024708, blue: 0.7861205935, alpha: 1).cgColor
+       
+        drawSeperator()
+
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        // for removing mask we add for rounded section and shadow
+        DispatchQueue.main.async {
+            self.layer.mask = nil
+        }
+        avatarImageView.image = nil
     }
-
+    func drawSeperator(){
+        let view = UIView.init(frame: CGRect.init(x: 0, y: centerView.bounds.height - 1 , width: centerView.bounds.width, height: 1))
+        view.backgroundColor = #colorLiteral(red: 0.8501740098, green: 0.8791047931, blue: 0.9002857208, alpha: 1)
+        seperatorView = view
+        centerView.addSubview(view)
+    }
+    func clearSeperator(){
+        if let view = seperatorView{
+            view.removeFromSuperview()
+        }
+    }
 }

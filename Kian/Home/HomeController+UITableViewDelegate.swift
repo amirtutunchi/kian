@@ -36,19 +36,47 @@ extension HomeController : UITableViewDelegate , UITableViewDataSource{
         let cornerRadius : CGFloat = 12.0
         if indexPath.row == 0 {
             if let cell = cell as? QuickAddsTableViewCell{
-                cell.centerView.roundCorners(corners: [.topLeft , .topRight], radius: cornerRadius)
+                if cell.model?.id == quickAddArray.first?.id{
+                    cell.centerView.roundCorners(corners: [.topLeft , .topRight], radius: cornerRadius)
+                }
             }
             if let cell = cell as? ContactsTableViewCell{
-                cell.centerView.roundCorners(corners: [.topLeft , .topRight], radius: cornerRadius)
+                if cell.model?.id == restOfConatactsArray.first?.id{
+                    cell.centerView.roundCorners(corners: [.topLeft , .topRight], radius: cornerRadius)
+                }
             }
-        }else if indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1{
-            if let cell = cell as? QuickAddsTableViewCell{
-                cell.centerView.roundCorners(corners: [.bottomLeft , .bottomRight], radius: cornerRadius)
-            }
-            if let cell = cell as? ContactsTableViewCell{
-                cell.centerView.roundCorners(corners: [.bottomLeft , .bottomRight], radius: cornerRadius)
+        }else{
+            if indexPath.section == 0 {
+                if indexPath.row == quickAddArray.count - 1{
+                    if let cell = cell as? QuickAddsTableViewCell{
+                        cell.centerView.roundCorners(corners: [.bottomLeft , .bottomRight ], radius: cornerRadius)
+                        cell.clearSeperator()
+                    }
+                }
+            }else{
+                if indexPath.row == restOfConatactsArray.count - 1{
+                    if let cell = cell as? ContactsTableViewCell{
+                        cell.centerView.roundCorners(corners: [.bottomLeft , .bottomRight ], radius: cornerRadius)
+                        cell.clearSeperator()
+                    }
+                }
+
             }
         }
-        
+    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = ContactHeaderTableView()
+        if section == 0 {
+            header.nameLbl.text = "Quick Adds"
+        }else{
+            header.nameLbl.text = "In Your Contacts"
+        }
+        return header
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.01
     }
 }
