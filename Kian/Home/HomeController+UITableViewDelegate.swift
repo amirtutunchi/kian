@@ -65,7 +65,6 @@ extension HomeController : UITableViewDelegate , UITableViewDataSource{
             }else{
                 if indexPath.row == restOfConatactsArray.count - 1{
                     if let cell = cell as? ContactsTableViewCell{
-                        print("vvvvvvvvvvvvvvvvv")
                         cell.centerView.roundCorners(corners: [.bottomLeft , .bottomRight ], radius: cornerRadius)
                         cell.clearSeperator()
                     }
